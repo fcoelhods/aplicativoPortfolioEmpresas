@@ -1,3 +1,7 @@
+import 'package:app_portfolio_empresas/telaClientes.dart';
+import 'package:app_portfolio_empresas/telaContato.dart';
+import 'package:app_portfolio_empresas/telaEmpresa.dart';
+import 'package:app_portfolio_empresas/telaServico.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -8,7 +12,27 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   void _abrirEmpresa(){
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => telaEmpresa() ));
+  }
 
+  void _abrirServico(){
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => telaServico() ));
+  }
+
+  void _abrirClientes(){
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => telaClientes() ));
+  }
+
+  void _abrirContato(){
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => telaContato() ));
   }
 
   @override
@@ -16,8 +40,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("ATM Consultoria"),
-        backgroundColor: Colors.green,
+        title: Text("PortfolioEmpresa"),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Container(
         padding: EdgeInsets.all(16),
@@ -36,7 +60,7 @@ class _HomeState extends State<Home> {
                     child: Image.asset("imagens/menu_empresa.png"),
                   ),
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirServico,
                     child: Image.asset("imagens/menu_servico.png"),
                   )
                 ],
@@ -48,11 +72,11 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirClientes,
                     child: Image.asset("imagens/menu_cliente.png"),
                   ),
                   GestureDetector(
-                    onTap: _abrirEmpresa,
+                    onTap: _abrirContato,
                     child: Image.asset("imagens/menu_contato.png"),
                   )
                 ],
