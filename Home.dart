@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("PortfolioEmpresa"),
+        title: Text("Clean Car Service"),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: Container(
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset("imagens/logo.png"),
+            Image.asset("imagens/logo_teste.jpg"),
             Padding(
               padding: EdgeInsets.only(top: 32),
               child: Row(
@@ -57,11 +57,11 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                   GestureDetector(
                     onTap: _abrirEmpresa,
-                    child: Image.asset("imagens/menu_empresa.png"),
+                    child: Image.asset("imagens/menu_empresa2.jpg"),
                   ),
                   GestureDetector(
                     onTap: _abrirServico,
-                    child: Image.asset("imagens/menu_servico.png"),
+                    child: Image.asset("imagens/menu_servicos2.jpg"),
                   )
                 ],
               ),
@@ -73,11 +73,11 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                   GestureDetector(
                     onTap: _abrirClientes,
-                    child: Image.asset("imagens/menu_cliente.png"),
+                    child: Image.asset("imagens/menu_clientes2.jpg"),
                   ),
                   GestureDetector(
                     onTap: _abrirContato,
-                    child: Image.asset("imagens/menu_contato.png"),
+                    child: Image.asset("imagens/menu_contatos2.jpg"),
                   )
                 ],
               ),
