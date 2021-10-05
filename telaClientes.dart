@@ -41,12 +41,12 @@ class _telaClientesState extends State<telaClientes> {
                 padding: EdgeInsets.only(top: 16),
                 child: Image.asset("imagens/cliente1.png")
                 ),
-              Text("Empresa de criação de software"),
+              Text("Empresa de aluguel de carros"),
               Padding(
                   padding: EdgeInsets.only(top: 16),
                   child: Image.asset("imagens/cliente2.png")
               ),
-              Text("Empresa de telecomunicações")
+              Text("Empresa de logística")
             ],
           ),
         ),

@@ -50,7 +50,7 @@ class _telaContatoState extends State<telaContato> {
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Text(
-                    "E-mail: atm@consultoria.com.br"
+                    "E-mail: cleancar@service.com.br"
                 ),
               ),
               Padding(
